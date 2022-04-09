@@ -95,6 +95,7 @@ sup {
   font-size: 15px;
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
 }
 
 .banner-area .menu ul li a:active {
@@ -327,7 +328,7 @@ sup {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 120px;
+  margin-top: 80px;
   padding: 90px 0;
   position: relative;
 }
@@ -438,11 +439,9 @@ sup {
 
 .section2 {
   background-image: url(images/one.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  margin-top: -100px;
+  @includebackground ():;
+  height: 150vh;
+  padding-top: 100px;
 }
 
 .section2 .layer {
@@ -450,8 +449,8 @@ sup {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 100px;
-  height: 1100px;
+  margin-top: 0px;
+  height: 1170px;
   padding: 100px 0;
 }
 

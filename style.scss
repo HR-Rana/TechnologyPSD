@@ -99,6 +99,7 @@ button:hover{
     font-size: 15px;
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
 }
 .banner-area .menu ul li a:active{
     color: $secondary;
@@ -268,7 +269,7 @@ height: 65vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 120px;
+  margin-top: 80px;
   padding: 90px 0;
   position: relative;
  
@@ -357,17 +358,22 @@ height: 65vh;
 }
 .section2{
     background-image: url(images/one.png);
-    @include background();
-    height: 100vh;
-   margin-top: -100px;
+    @includebackground():;
+    height:150vh;
+    padding-top: 100px;
+    // transform: rotate(5deg);
+    // -webkit-transform: rotate(50deg);
+    // -moz-transform: rotate(50deg);
+    // -ms-transform: rotate(50deg);
+    // -o-transform: rotate(50deg);
 }
 .section2 .layer{
     background-image: url(images/two.png);
     @include background();
-    margin-top: 100px;
-    height: 1100px;
+    margin-top: 0px;
+    height: 1170px;
     padding: 100px 0;
-
+   
 }
 .section2 .layer .container{
     padding: 100px 0;

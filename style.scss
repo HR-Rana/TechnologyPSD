@@ -1,0 +1,727 @@
+
+
+
+
+$primary: #3734ae;
+$secondary:#3895f4;
+
+
+
+
+@mixin Buttons{
+    background: linear-gradient(to left, $primary, $secondary);
+    border: 2px solid ;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    color: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+@mixin  h3TAg {
+    font-weight: 600;
+}
+
+
+.flex-box{
+    display: flex;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: $primary;
+    text-transform:uppercase;
+}
+
+button{
+    @include Buttons();
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    text-transform: uppercase;
+   
+}
+button:hover{
+    background: linear-gradient(to left, $secondary, $primary);
+    transform: translateY(3px);
+    -webkit-transform: translateY(3px);
+    -moz-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    -o-transform: translateY(3px);
+}
+
+ sup{
+  font-size: 6px;
+}
+
+
+.banner-area{
+    background-image: url(images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    height: 115vh;
+}
+.banner-area .header{
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.banner-area .header .logo{
+    width: 15%;
+}
+.banner-area .header .logo img{
+    width: 100%;
+    padding: 10px 0;
+}
+.banner-area .navigation{
+    width: 60%;
+}
+.banner-area .menu{
+    width: 100%;
+    float: right;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.banner-area .menu ul{
+    width: 80%;
+    float: right;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 8px 15px;
+}
+.banner-area .menu ul li{}
+.banner-area .menu ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+.banner-area .menu ul li a:active{
+    color: $secondary;
+    text-transform: uppercase;
+}
+.banner-area .menu ul li a:hover{
+    color: $secondary;
+}
+
+.banner-area .buttons{
+    width: 30%;
+    float: right;
+    overflow: hidden;
+}
+.banner-area .buttons button{
+    margin: 0px 5px;
+}
+
+
+.banner-area .banner{}
+.banner-area .banner .container{}
+.banner-area .banner h1{
+    width: 100%;
+    font-size: 180px;
+    letter-spacing:30px;
+    color: rgb(131, 131, 131);
+    opacity: 40%;
+    font-weight: bold;
+    justify-content: space-between;
+   position: absolute;
+   top: 75px;
+   left: 20%;
+   cursor: unset;
+}
+.banner-area .banner .text{
+    text-align: center;
+    padding: 30px 0;
+    justify-content: space-between;
+    z-index:999999999999999;
+}
+
+.banner-area .banner h3{
+    font-size: 30px;
+    color:$secondary;
+    z-index: 6666;
+}
+.banner-area .banner h2{
+    font-size: 45px;
+    color: rgb(216, 216, 216);
+    z-index: 7777;
+}
+.banner-area .banner p{
+    color: white;
+}
+.banner-area .header button{
+    z-index:99999999999999999;
+}
+.banner-area .header .buttons a{
+    background-color: transparent;
+    border: 2px solid $secondary;
+    padding:7px;
+    color: white;
+    text-decoration: none;
+}
+.banner-area .header .button2{
+    background-color: $secondary;
+    
+}
+.banner-area .banner .dashbord{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    position:relative;
+}
+.banner-area .banner .dashbord img{
+    width: 100%;
+    position: relative;
+}
+.banner-area .banner .dashbord img{
+    position: relative;
+    position: relative;
+}
+.banner-area .banner .right{
+    position: absolute;
+    top: 400px;
+    right: 230px;
+
+    animation-name: mobile;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.banner-area .banner .left{
+    position: absolute;
+    left: -70px;
+    bottom: 50px;
+
+    animation-name: profile;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes  mobile {
+    0%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-5px);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+}
+     100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+
+@keyframes  profile {
+    0%{
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -o-transform: scale(1.0);
+}
+    50%{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
+     100%{
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        -moz-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        -o-transform: scale(1.0);
+}
+}
+
+
+
+
+
+.section1-layer{
+    padding: 120px 0px;
+    overflow: hidden;
+}
+.section1{
+width: 100%;
+height: 65vh;
+  background: url(images/images.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 120px;
+  padding: 90px 0;
+  position: relative;
+ 
+  
+}
+.section1 .container{
+    padding:0 ;
+    position: relative;
+}
+.section1{
+  position: relative;
+}
+.section1 .boy img{
+    position: absolute;
+    top:0%;
+    left: 10%;
+    z-index: 99999999999999;
+    
+
+    animation-name: boy;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.section1 h2{
+    font-weight: 700;
+}
+.section1 .section1-text{
+    width: 60%;
+    float: right;
+    overflow: hidden;
+
+}
+.section1 .section1-text p{
+    font-size: 16px;
+}
+.section1 .section1-text p{}
+
+
+@mixin background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+@keyframes boy {
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+} 30%{
+        transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
+}
+    65%{
+        transform:rotate(0deg);
+        -webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+}  10%{
+        transform:rotate(-2deg);
+        -webkit-transform:rotate(-2deg);
+        -moz-transform:rotate(-2deg);
+        -ms-transform:rotate(-2deg);
+        -o-transform:rotate(-2deg);
+}
+}
+
+
+
+
+
+
+
+.section{
+    height: 100%;
+}
+.section2{
+    background-image: url(images/one.png);
+    @include background();
+    height: 100vh;
+   margin-top: -100px;
+}
+.section2 .layer{
+    background-image: url(images/two.png);
+    @include background();
+    margin-top: 100px;
+    height: 1100px;
+    padding: 100px 0;
+
+}
+.section2 .layer .container{
+    padding: 100px 0;
+}
+.section2 .layer h2{
+    text-align: center;
+    color: white;
+    text-align: center;
+}
+.section2 .item-box{
+    justify-content: space-between;
+    margin-top: 75px;
+}
+.section2 .layer .content{
+    width: 23%;
+    float: left;
+    overflow: hidden;
+    justify-content: center;
+    border: 1px solid $primary;
+    margin: 10px;
+    padding: 15px;
+    height: 200px;
+}
+.section2 .layer .content img{
+   
+}
+.section2 .layer .content p{
+    color: white;
+    margin: 10px 0;
+}
+.section2 .layer .buttons{
+    text-align: center;
+}.section2 .layer button{
+    margin-top: 100px;
+    width: 20%;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+.section3{
+    padding: 100px 0;
+}
+.section3 h2{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+.section3 .top-site{
+    padding: 50px 0;
+}
+.section3 .years{
+    width: 45%;
+   margin: 25px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.section3 .years p:hover{
+    border: 1px solid $primary;
+    color: $secondary;
+    cursor: pointer;
+}
+.section3 .years p{
+    width: 15%;
+    box-shadow: 0px 0px 1px black;
+    border: 1px solid rgb(243, 243, 243);
+    padding: 5px 10;
+    color: rgb(155, 154, 154);
+    font-weight: 600;
+}
+.section3 .details{}
+.section3 .details .left{
+    width: 50%;
+}
+.section3 .details h6{
+    margin: 10px 0;
+    font-weight: 700;
+}
+.section3 .details img{
+    margin: 20px 0;
+}.section3 .details p{
+    font-size: 16px;
+}
+.section3 .details .right{
+    width: 50%;
+}
+
+
+
+
+
+.section4{
+    padding: 50px 0;
+    background-image: url(images/wave.png);
+    height: 1100px;
+}
+.team-section{}
+.team-section .container{
+    margin-top: 15%;
+    text-align: center;
+}
+.team-section h2{
+    margin: 35px 0;
+    font-weight: 700;
+}
+.team-section .flex-box{
+    justify-content: space-between;
+   
+}
+.team-section .member{
+    width: 32%;
+    text-align: center;
+   
+   
+
+    color: white;
+}
+.team-section .member img{
+    width: 100%;
+    height: 80%;
+    background:linear-gradient(to top, $secondary, $primary);
+    border-radius: 50% 50% 0px 0px;
+    -webkit-border-radius: 50% 50% 0px 0px;
+    -moz-border-radius: 50% 50% 0px 0px;
+    -ms-border-radius: 50% 50% 0px 0px;
+    -o-border-radius: 50% 50% 0px 0px;
+    padding:0px 30px;
+}
+.team-section .name{
+    background-color: $primary;
+    padding: 25px 10px;
+}
+.team-section .name h4{
+    font-size: 20px;
+    color: white;
+}
+.team-section .name p{}
+.team-section button{
+    width: 25%;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+
+
+
+.Award-section{
+    padding: 100px 0;
+}
+.Award-section .left{
+    width: 25%;
+    margin: 50px 0;
+}
+.Award-section .left h4{
+    color: $primary;
+    font-weight: 700;
+    font-size: 48px;
+}
+.Award-section .right{
+    width: 70%;
+    z-index:999999999;
+}
+.Award-section .right img{
+    width: 100%;
+    z-index: 999999999999;
+}
+
+.Award-section{
+    position: relative;
+}
+.Award-section .flying{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+.blog-section{
+    margin-top: 5%;
+}
+.blog-section h2{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+.blog-section .flex-box{
+    background-image: url(images/down.png);
+    @include background();
+    height: 600px;
+}
+.blog-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-section .blog{
+    width: 32%;
+    justify-content: space-between;
+    margin: 25px 0;
+    margin-top: -5%;
+    overflow: hidden;
+}
+.blog-section .blog img:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+.blog-section .blog .img{
+    overflow: hidden;
+}
+.blog-section .blog img{
+    width: 100%;
+    overflow: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.blog-section .blog-text{
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 0px 0px 15px 15px;
+    -webkit-border-radius: 0px 0px 15px 15px;
+    -moz-border-radius: 0px 0px 15px 15px;
+    -ms-border-radius: 0px 0px 15px 15px;
+    -o-border-radius: 0px 0px 15px 15px;
+    overflow: hidden;
+}
+.blog-section .blog-text h4{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.blog-section .blog-text span{
+    color: red;
+    padding: 15px 0;
+    font-weight: 600;
+}
+.blog-section .blog-text p{
+    margin: 10px 0;
+}
+.blog-section .blog-text a{
+    text-decoration: none;
+    font-weight: 600;
+    color: $primary;
+    text-transform: uppercase;
+}
+
+
+
+.footer-area{
+    padding: 50px 0;
+    margin-top: 30px;
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.footer-area .logo-icon .menu a{
+    text-decoration: none;
+    line-height: 10px;
+    font-weight: 600;
+}
+.footer-area .logo-icon{
+    width: 42%;
+}
+.footer-area .logo-icon p{
+   width: 70%;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+.footer-area sup{
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: -30px;
+}
+
+.footer-area .colorPad{
+    margin-top: 30%;
+}
+.footer-area .right-site{
+    width: 60%;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.footer-area .right-site .left{
+    width: 45%;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-area .right-site .left .contact p{
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.footer-area .right-site .left .contact a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer-area .right-site .left .contact span{
+    font-weight: 600;
+}
+
+.footer-area .right-site .right{
+}
+.footer-area .right-site .right img{
+    width: 40px;
+    height: 40px;
+    margin-left: -0px;
+    cursor: pointer;
+
+    animation-name: mobile;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+.footer-area .screenshot{
+    width: 100%;
+}
+.footer-area .screenshot img{
+    width: 100%
+
+}
+
